@@ -1,4 +1,4 @@
-# EC2_web_application
+## EC2_web_application
 
 ##  Project Overview
 This project demonstrates how to deploy a **static web application** on an **Amazon EC2 instance** using **Nginx** as the web server.  
@@ -37,9 +37,10 @@ sudo amazon-linux-extras enable nginx1
 sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
+----
 
 
-## index.html for web application
+## example index.html code
 
 <!DOCTYPE html>
 <html>
