@@ -46,15 +46,9 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
    sudo amazon-linux-extras enable nginx1
    sudo yum install nginx -y
    sudo systemctl start nginx
-   sudo systemctl enable nginx
-Deploy Static Website
-
-Navigate to /usr/share/nginx/html/
-
-Replace index.html with your custom file
+   sudo systemctl   `enable nginx
 
 ## Example index.html Code
-
 
 
 <!DOCTYPE html>
@@ -106,6 +100,7 @@ Replace index.html with your custom file
     </section>
 </body>
 </html>
+
 
 ## Final Output 
 ![Output](images/Output_web_application.png)
