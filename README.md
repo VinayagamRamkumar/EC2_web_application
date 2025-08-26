@@ -48,8 +48,7 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
    sudo systemctl start nginx
    sudo systemctl   `enable nginx
 
-# Example index.html Code
-
+# Example index.html Code (html)
 
 <!DOCTYPE html>
 <html>
