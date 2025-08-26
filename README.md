@@ -1,7 +1,7 @@
 ## EC2_web_application
 
 
-#  Website on AWS EC2  
+#  Web application on AWS EC2  
 
 This project demonstrates how I, as a **Cloud Engineer**, launched an **EC2 instance**, installed **Nginx**, deployed a static website, and accessed it using the public IP address.  
 
@@ -54,9 +54,7 @@ Navigate to /usr/share/nginx/html/
 Replace index.html with your custom file
 
 ## Example index.html Code
-html
-Copy
-Edit
+
 <!DOCTYPE html>
 <html>
 <head>
