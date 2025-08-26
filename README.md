@@ -46,9 +46,9 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
    sudo amazon-linux-extras enable nginx1
    sudo yum install nginx -y
    sudo systemctl start nginx
-   sudo systemctl   `enable nginx
+   sudo systemctl enable nginx
 
-# Example index.html Code (css)
+# Example index.html Code 
 
 <!DOCTYPE html>
 <html>
