@@ -1,52 +1,72 @@
 ## EC2_web_application
 
-##  Project Overview
-This project demonstrates how to deploy a **static web application** on an **Amazon EC2 instance** using **Nginx** as the web server.  
-It covers launching an EC2 instance, installing Nginx, hosting a static website, and accessing it via a public IP.
+
+#  Website on AWS EC2  
+
+This project demonstrates how I, as a **Cloud Engineer**, launched an **EC2 instance**, installed **Nginx**, deployed a static website, and accessed it using the public IP address.  
 
 ---
 
-## Tools & Services Used
-- **AWS EC2** – Virtual server to host the web app  
-- **Amazon Linux 2023** – OS for the instance  
-- **Nginx** – Web server for serving static content  
-- **HTML & CSS** – For building the frontend UI  
-- **SSH** – Secure connection to EC2  
+##  Project Screenshots  
+
+### 1. EC2 Instances Running  
+Launched two **EC2 instances** (`t2.micro`) in **N. Virginia (us-east-1)**.  
+![EC2 Instances](images/ec2_instance.png)  
 
 ---
 
-## Steps Followed
-
-### 1️⃣ Launching an EC2 Instance
-- Logged in to **AWS Console → EC2 → Launch Instance**  
-- Selected **Amazon Linux 2023 AMI**  
-- Chose **t2.micro (Free Tier)**  
-- Allowed inbound rules for **HTTP (80)** and **SSH (22)**  
-
- **EC2 Instance Running**  
-![EC2 Instance](images/ec2%20instance.png)
+### 2. Editing index.html File  
+Connected to the EC2 instance using **SSH (EC2 Instance Connect)** and created a custom `index.html` file.  
+![Editing HTML File](images/index.html_for_web_application.png)  
 
 ---
 
-### 2️⃣ Installing Nginx
-Connected via SSH and ran:
+### 3. Nginx Web Server Setup  
+Replaced the default Nginx web page with the new `index.html` under `/usr/share/nginx/html/`.  
+![Nginx Setup](images/nginx.code.png)  
 
-```bash
-sudo yum update -y
-sudo amazon-linux-extras enable nginx1
-sudo yum install nginx -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-----
+---
 
+### 4. Hosted Application Output  
+Accessed the website using the **EC2 Public IPv4 address** in the browser.  
+![Hosted Website](images/Output_web_application.png)  
 
-## example index.html code
+---
 
+##  Workflow  
+
+1. **Launch EC2 Instance**  
+   - Amazon Linux 2023 AMI  
+   - Instance type: `t2.micro`  
+   - Security Group → Allowed **SSH (22)** & **HTTP (80)**  
+
+2. **Install & Configure Nginx**  
+   ```bash
+   sudo yum update -y
+   sudo amazon-linux-extras enable nginx1
+   sudo yum install nginx -y
+   sudo systemctl start nginx
+   sudo systemctl enable nginx
+Deploy Static Website
+
+Navigate to /usr/share/nginx/html/
+
+Replace index.html with your custom file
+
+## Example index.html Code
+html
+Copy
+Edit
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Web Application</title>
+    <title>MY TECHTRAPTURE</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         header {
             background-color: #2c3e50;
             color: white;
@@ -54,35 +74,38 @@ sudo systemctl enable nginx
             text-align: center;
             font-size: 24px;
         }
+        nav {
+            text-align: center;
+            background: #34495e;
+            padding: 10px;
+        }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
-        nav a:hover {
-            text-decoration: underline;
+        section {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>MY TECHTRAPTURE</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        MY TECHTRAPTURE
     </header>
-
-    <p>Welcome to my application hosted on AWS!</p>
-
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>Welcome to my application hosted on AWS!</h2>
+    </section>
 </body>
 </html>
 
-
-
-## Final Output
-![Output](images/Output%20for%20ec2%20in%20web%20application.png)
+## Final Output 
+![Output](images/Output_web_application.png)
