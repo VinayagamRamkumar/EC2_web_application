@@ -46,11 +46,7 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
    sudo amazon-linux-extras enable nginx1
    sudo yum install nginx -y
    sudo systemctl start nginx
-   sudo systemctl enable nginx
-
-## Example index.html Code
-
-<!DOCTYPE html>
+   sudo systemctl enable nginx<!DOCTYPE html>
 <html>
 <head>
     <title>MY TECHTRAPTURE</title> 
