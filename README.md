@@ -86,16 +86,16 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
 </head>
 <body>
     <header>
-        MY TECHTRAPTURE<br>
+        MY TECHTRAPTURE
     </header>
     <nav>
-        <a href="#">Home</a><br>
-        <a href="#">About</a><br>
-        <a href="#">Services</a><br>
-        <a href="#">Contact</a><br>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </nav>
     <section>
-        <h2>Welcome to my application hosted on AWS!</h2><br>
+        <h2>Welcome to my application hosted on AWS!</h2>
     </section>
 </body>
 </html>
