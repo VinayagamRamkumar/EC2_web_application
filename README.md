@@ -53,34 +53,34 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MY TECHTRAPTURE</title> <br>
+    <title>MY TECHTRAPTURE</title> 
     <style>
         body {
-            font-family: Arial, sans-serif;<br>
-            margin: 0;<br>
-            padding: 0;<br>
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #2c3e50;<br>
-            color: white;<br>
-            padding: 20px;<br>
-            text-align: center;<br>
-            font-size: 24px;<br>
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
         }
         nav {
-            text-align: center;<br>
-            background: #34495e;<br>
-            padding: 10px;<br>
+            text-align: center;
+            background: #34495e;
+            padding: 10px;
         }
         nav a {
-            color: white;<br>
-            margin: 0 15px;<br>
-            text-decoration: none;<br>
-            font-weight: bold;<br>
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
         section {
-            padding: 20px;<br>
-            text-align: center;<br>
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
