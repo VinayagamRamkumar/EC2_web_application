@@ -53,49 +53,49 @@ Accessed the website using the **EC2 Public IPv4 address** in the browser.
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MY TECHTRAPTURE</title>
+    <title>MY TECHTRAPTURE</title> <br>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;<br>
+            margin: 0;<br>
+            padding: 0;<br>
         }
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
+            background-color: #2c3e50;<br>
+            color: white;<br>
+            padding: 20px;<br>
+            text-align: center;<br>
+            font-size: 24px;<br>
         }
         nav {
-            text-align: center;
-            background: #34495e;
-            padding: 10px;
+            text-align: center;<br>
+            background: #34495e;<br>
+            padding: 10px;<br>
         }
         nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
+            color: white;<br>
+            margin: 0 15px;<br>
+            text-decoration: none;<br>
+            font-weight: bold;<br>
         }
         section {
-            padding: 20px;
-            text-align: center;
+            padding: 20px;<br>
+            text-align: center;<br>
         }
     </style>
 </head>
 <body>
     <header>
-        MY TECHTRAPTURE
+        MY TECHTRAPTURE<br>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#">Home</a><br>
+        <a href="#">About</a><br>
+        <a href="#">Services</a><br>
+        <a href="#">Contact</a><br>
     </nav>
     <section>
-        <h2>Welcome to my application hosted on AWS!</h2>
+        <h2>Welcome to my application hosted on AWS!</h2><br>
     </section>
 </body>
 </html>
